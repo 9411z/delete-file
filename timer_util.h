@@ -26,6 +26,10 @@ using Clock_t          = std::chrono::steady_clock;
 using MillisDuration_t = std::chrono::milliseconds;
 using TimerTaskPtr     = std::shared_ptr<TimerTask>;
 
+    
+  /*template <typename _TPointer> struct SpGreater {
+    bool operator()(const _TPointer &a, const _TPointer &b) { return *a > *b; }
+}; */
 using TimerTaskQueue =
     std::priority_queue<TimerTaskPtr, std::deque<TimerTaskPtr>, util::SpGreater<TimerTaskPtr>>;
 
