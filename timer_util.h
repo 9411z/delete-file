@@ -15,7 +15,7 @@
 #include <string>
 #include <thread>
 
-namespace pavaro {
+namespace zq {
 namespace util {
 class Timer;
 class TimerTask;
